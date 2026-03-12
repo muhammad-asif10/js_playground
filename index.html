@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Console Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JS Console</h1>
+            <div class="actions">
+                <button id="run-btn" title="Run Code (Ctrl + Enter)">Run ▶</button>
+                <button id="clear-btn" title="Clear Console">Clear ⊘</button>
+            </div>
+        </header>
+        
+        <main>
+            <section class="editor-pane">
+                <textarea id="code-input" placeholder="// Write JavaScript here...
+console.log('Hello, World!');" spellcheck="false"></textarea>
+            </section>
+            
+            <div class="resizer" id="drag-handle"></div>
+
+            <section class="console-pane" id="console-output">
+                <div class="log-entry system">Console ready.</div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
